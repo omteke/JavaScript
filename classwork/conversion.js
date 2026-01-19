@@ -93,7 +93,7 @@ console.log(2%2);   // Modulus
 
 // String Concatenation
 let str1 = "Hello";
-let str2 = " Poorva";
+let str2 = " om";
 console.log(str1 + str2);
 
 // Conversions
