@@ -36,3 +36,34 @@ let demoFun = function call()
     
            }
 console.log(demoFun);
+
+// memory 
+// stack premitive use what ever you can declare variable it keep Copy
+// heap it gives reference original value
+// stack
+let my_youtube_name = "om"
+let new_youtube_name = my_youtube_name
+new_youtube_name = "themastercoder"
+
+console.log(my_youtube_name)
+console.log(new_youtube_name)
+
+
+// nonprimitive 
+let user1 = {
+    email:"omteke@2005gmail.com",
+    fname:"om",
+    id:20
+} 
+
+let user2 = user1
+user2.email="omteke25gmail.com"
+console.log(user1.email)
+console.log(user2.email)
+
+// primitive datatypes stores in stack
+// a copy is made chages is doesnot affect
+
+// heap:when is assign one oject to another variable reference is copy not value if we change one
+// variable another alsochanges
+
