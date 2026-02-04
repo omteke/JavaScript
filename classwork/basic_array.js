@@ -15,7 +15,7 @@ console.log(myarr1)
 myarr1.unshift(6)
 console.log(myarr1)  //it shift all element and add element at first
 
-
+// Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 myarr1.shift(6)
 console.log(myarr1)  
 

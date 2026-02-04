@@ -18,7 +18,7 @@ console.log(Math.abs(-4))
 // when we pass positive value it convert to negativea and viseversa
 console.log(Math.floor(2.2))
 // lowest value
-console.log(Math.ceil(2.2))
+console.log(Math.ceil(2.2)) //highest value
 console.log(Math.round(2.2))
 console.log(Math.min(1,2,34,5))
 console.log(Math.max(1,2,34,5))
