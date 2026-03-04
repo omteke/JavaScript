@@ -8,8 +8,16 @@
 
 // javascript uses DOM to connect webpages by making object of it
 
-document.getElementById("title_id").id
-document.getElementById("title_id").class
-document.getElementById("title_id").className
-document.getElementById("title_id").setAttribute
-document.getElementById("title_id").getAttribute
+// document.getElementById("title_id").id
+// document.getElementById("title_id").class
+// document.getElementById("title_id").className
+// document.getElementById("title_id").setAttribute
+// document.getElementById("title_id").getAttribute
+
+
+// What is querySelector in JavaScript?
+
+// querySelector() is a DOM method used to select an HTML element using CSS selectors.
+// It returns the first matching element.
+
+

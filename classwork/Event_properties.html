@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Properties</title>
+</head>
+<body>
+
+<button id="btn">Click Me</button>
+
+<script>
+document.getElementById("btn").addEventListener("click", function(event) {
+
+    console.log("Type:", event.type);
+    console.log("Time:", event.timeStamp);
+    console.log("Target:", event.target);
+    console.log("Client X:", event.clientX);
+    console.log("Client Y:", event.clientY);
+    console.log("Screen X:", event.screenX);
+    console.log("Screen Y:", event.screenY);
+    console.log("Alt Key:", event.altKey);
+    console.log("Shift Key:", event.shiftKey);
+
+});
+</script>
+
+</body>
+</html>
+1.type
+
+<!-- 👉 Tells which event occurred
+
+Example:
+
+"click"
+
+"keydown"
+
+"mouseover"
+
+button.addEventListener("click", function(event) {
+    console.log(event.type); // click
+});
+2️⃣ timeStamp
+- Shows time when event happened (milliseconds since page loaded)
+
+console.log(event.timeStamp);
+
+3️⃣ preventDefault()
+- Stops the default browser action
+
+Example:
+
+Stop form submission
+
+Stop link opening
+
+event.preventDefault();
+
+Example:
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // form will not reload page
+});
+4️⃣ target
+
+👉 Element where event actually happened
+
+console.log(event.target);
+
+Example:
+If you click a button → target = button
+
+5️⃣ currentTarget (sometimes called source in jQuery context)
+
+👉 Element where event listener is attached
+
+Difference:
+
+target → where clicked
+
+currentTarget → where listener added
+
+console.log(event.currentTarget);
+6️⃣ clientX & clientY
+
+👉 Mouse position inside browser window
+
+console.log(event.clientX, event.clientY);
+
+Example:
+Mouse click position relative to visible screen area.
+
+7️⃣ screenX & screenY
+
+👉 Mouse position relative to entire computer screen
+
+console.log(event.screenX, event.screenY);
+8️⃣ altKey
+
+👉 Returns true if ALT key was pressed
+
+if (event.altKey) {
+    console.log("ALT key pressed");
+}
+9️⃣ shiftKey
+
+👉 Returns true if SHIFT key was pressed
+
+if (event.shiftKey) {
+    console.log("SHIFT key pressed");
+} -->
+
+<!-- ✅ What is jQuery?
+
+jQuery is a fast, small JavaScript library that makes it easier to use JavaScript in web pages.
+
+It helps you:
+✔ Select HTML elements
+✔ Handle events (click, submit, etc.)
+✔ Create animations
+✔ Modify HTML & CSS
+✔ Make AJAX requests
+
+👉 In simple words:
+jQuery = JavaScript but easier and shorter to write -->
+
+<!-- ✅ Example (JavaScript vs jQuery)
+Normal JavaScript
+document.getElementById("text").style.color = "red";
+jQuery
+$("#text").css("color", "red"); -->

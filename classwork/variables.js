@@ -44,7 +44,7 @@ Non-Primitive Data Types:
 
 // Examples of Primitive Data Types
 let age = 21;                      // Number
-let studentName = "Poorva";        // String
+let studentName = "om";        // String
 let isStudent = true;              // Boolean
 let address;                       // Undefined
 let marks = null;                  // Null

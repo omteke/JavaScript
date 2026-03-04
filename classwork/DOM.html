@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,11 +33,95 @@
         </ul>
     </div>
 </body>
-</html>
+</html> -->
 
 <!-- query selector -->
 <!-- it gives one value -->
 
-document.queryselector
+<!-- document.queryselector
 activity:dom
-activity: create one project using js and dom
+activity: create one project using js and dom -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Practice</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="mainTitle">DOM Practice Page</h1>
+
+<p class="text">Paragraph One</p>
+<p class="text">Paragraph Two</p>
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+
+<input type="text" name="username" value="Om">
+<input type="text" name="username" value="Teke">
+
+<br><br>
+
+<button onclick="findById()">Find by ID</button>
+<button onclick="findByTag()">Find by Tag</button>
+<button onclick="findByClass()">Find by Class</button>
+<button onclick="findByCSS()">Find by CSS</button>
+<button onclick="findByCollection()">Find by Collection</button>
+
+<script>
+
+    // 1️Finding by ID
+    function findById() {
+        let el = document.getElementById("mainTitle");
+        el.style.color = "red";
+        el.innerText = "Changed using ID";
+    }
+
+    // Finding by Tag Name
+    function findByTag() {
+        let paras = document.getElementsByTagName("p");
+
+        for (let i = 0; i < paras.length; i++) {
+            paras[i].style.color = "blue";
+        }
+    }
+
+    // Finding by Class Name
+    function findByClass() {
+        let boxes = document.getElementsByClassName("box");
+
+        for (let box of boxes) {
+            box.style.backgroundColor = "yellow";
+        }
+    }
+
+    // Finding by CSS Selector
+    function findByCSS() {
+        let el = document.querySelector(".text");
+        el.style.fontSize = "25px";
+    }
+
+    // Finding by HTML Object Collection
+    function findByCollection() {
+        let inputs = document.forms[0]; // example collection (forms)
+        console.log(inputs);
+        alert("Check console for collection example");
+    }
+
+</script>
+
+</body>
+</html>
