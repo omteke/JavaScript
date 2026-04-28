@@ -6,7 +6,7 @@ const products = [
   { id: 102, name: 'Mouse', price: 25 }
 ];
 
-app.get('/api/products', (req, res) => {
+app.get('/', (req, res) => {
   res.json(products); // Sends the array of objects as a JSON response
 });
 

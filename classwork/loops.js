@@ -14,11 +14,13 @@ do {
   j++;
 } while (j < 5);
 
+// Used to iterate over keys (indexes or property names)
 const shoppingCart = { banana: 2, apple: 5 };
 for (const fruit in shoppingCart) {
   console.log(fruit); // Output: banana, apple
 }
 
+// Used to iterate over values
 const items = ['apple', 'banana', 'cherry'];
 for (const item of items) {
   console.log(item); // Output: apple, banana, cherry

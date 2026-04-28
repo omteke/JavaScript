@@ -1,0 +1,4 @@
+express:
+express is an minimal and flexiable web framework for node js
+it helps to handle routes,middleware and http request easily
+makes backend devlopment fast and simple

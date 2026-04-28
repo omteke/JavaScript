@@ -1,0 +1,138 @@
+Angular:- 
+-for run angular code "ng serve" command is used
+-for create angular project "ng new project-name" command is used
+-for create component "ng generate component component-name" command is used
+
+package.jeson:-
+it is an configuration file which is used to manage the dependencies of the project 
+
+package-lock.json:-
+here detailed information about the dependencies of the project is stored
+
+angular.json:-
+project configuration file which is used to manage the build and development process of the project
+
+styles.css:-
+it is a global stylesheet file which is used to define the styles for the entire application
+
+gitignore:-
+it is version control file which is used to ignore the files and folders which are not required to be tracked by git
+
+editorconfig:-
+vs code style configuration file
+
+index.html:-
+it is the main html file which is used to load the angular application in the browser
+
+main.ts:-
+it is the entry point of the angular application where the root module is bootstrapped
+
+appconfig.ts:-
+it is a configuration file which is used to store the global configuration of the application
+
+src:-
+it is the source folder where all the source code of the application is stored
+
+app:-
+it is the main folder where all the components, services, and other files of the application are stored
+
+components:-
+it is a UI block of structure 
+when we create a component it will create 4 files:- html, css, ts, spec.ts
+when we create a component the cammand is:- ng generate component component-name
+we can also use the short form of the above command:- ng g c component-name
+
+data binding in angular:-
+one way data binding types-------->
+interpolation ---> {{value}} -----> shows data from ts in HTML
+property ----> [property] = "value" ----> binding data from ts to HTML element property
+event ----> (event) = "handler()" ----> binding event from HTML element to ts method
+two way ----> [(ngModel)] = "value" ----> binding data from ts to HTML and HTML to ts (requires FormsModule)
+
+activity1:- how we can use for loop,switch cases and ef-else block in angular.
+
+In Angular, we use special directives in HTML templates for loops, conditions, and switches (not raw JavaScript). Here’s a simple breakdown with examples. I’ll assume you’re working in `app.component.ts` and `app.component.html` in your `my-first-app` project.
+
+### 1. **For Loop: `*ngFor`**
+   - Loops over a list (array) and repeats HTML for each item.
+   - Example: Show a list of fruits.
+
+   In `app.component.ts:
+  
+   export class AppComponent {
+     fruits = ['Apple', 'Banana', 'Orange'];
+   }
+   
+
+   In `app.component.html
+   html
+   <ul>
+     <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+   </ul>
+
+   - Output: A list like "Apple", "Banana", "Orange".
+
+### 2.If-Else: *ngIf
+   - Shows or hides content based on true/false.
+   - Use else for the "otherwise" part.
+
+   **In app.component.ts
+
+   export class AppComponent {
+     isVisible = true;
+   }
+  
+
+   In app.component.html
+   html
+   <p *ngIf="isVisible; else hidden">Hello!</p>
+   <ng-template #hidden>
+     <p>Goodbye!</p>
+   </ng-template>
+   
+   - Output: "Hello!" if `isVisible` is true; otherwise "Goodbye!".
+
+### 3. Switch Case: *ngSwitch
+   - Checks a value and shows matching content.
+
+   **In app.component.ts
+   typescript
+   export class AppComponent {
+     day = 'Monday';
+   }
+  
+
+   In app.component.html
+   html
+   <div [ngSwitch]="day">
+     <p *ngSwitchCase="'Monday'">Start of week</p>
+     <p *ngSwitchCase="'Friday'">Almost weekend</p>
+     <p *ngSwitchDefault>Regular day</p>
+   </div>
+   
+   - Output: "Start of week" (matches day).
+
+Run "ng serve" to test.
+directives
+two types:
+1.structural
+2.attribute
+
+directives means think of directives kile magic bands that can chage your webpage without
+rewriting it
+
+structural change the sturcture of your page like add,remove,repetated things 
+attribute changes the look of or style of your page
+
+activites
+deep study od directives with all examples
+
+
+modules:
+before angular 15 needs modules now we are using angular 21 version
+so modules are optional.  we can use stand alone components
+
+services:
+it is like helperclass it is used to share data or share logic and many company use ,instead of writing same code in every
+component , we write it in once in service.
+

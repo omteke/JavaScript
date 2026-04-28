@@ -1,0 +1,26 @@
+express:
+express is an minimal and flexiable web framework for node js
+that simplyfies development of websevres and apis
+it helps to handle routes,middleware and http request easily
+makes backend devlopment fast and simple
+
+fearures:
+-routing,middlewaresupport,request and respose handling ,rest api creation,templet rendering
+
+npm is node package manager
+
+differnce bet package.json and package lock .json
+diffrence bet dev dependencies and dependencies
+http requests
+
+routing in expressjs:
+routing referes to determining how an application respond to the client request for a specific url and http methods
+
+create department project 
+
+
+
+http methods handler funtions
+
+middleware:
+function are function are execute during the life cycle of request before sending final responce they have acceses to request,respose and next

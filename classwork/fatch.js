@@ -1,7 +1,7 @@
 // fatch is a inbuilt js method used to make http requests
 
-const { promises } = require("node:dns");
-const { callbackify } = require("node:util");
+// const { promises } = require("node:dns");
+// const { callbackify } = require("node:util");
 
 
 
